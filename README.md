@@ -11,5 +11,13 @@ Topik halaman saya: daftar film yang pernah saya tonton.
 
 
 ## Catatan penggunaan AI
+## Catatan penggunaan AI
 
-memakai AI.# pabw-magfinachintiaandris
+Saya menggunakan AI untuk:
+- memahami konsep HTML semantik, aksesibilitas, dan alur Git
+- mendapat contoh struktur kode sebagai acuan
+
+Saya sendiri yang:
+- mengetik dan menjalankan seluruh perintah di terminal
+- menyesuaikan isi (topik, data tabel, teks) dengan pilihan saya sendiri
+- menguji hasilnya di peramban
