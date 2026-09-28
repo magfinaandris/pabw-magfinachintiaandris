@@ -1,4 +1,3 @@
-## Pertemuan 3 — Halaman profil saya
 
 Topik halaman saya: daftar film yang pernah saya tonton.
 
@@ -8,6 +7,7 @@ Topik halaman saya: daftar film yang pernah saya tonton.
 - Dua bagian utama: Daftar Film, Tambah Film
 - Kolom tabel: judul, tahun, sutradara, rating saya
 - Kolom form: judul film, tahun rilis, rating
+
 
 ## Catatan penggunaan AI
 
