@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Catatan Film Saya</title>
+
+  <!-- urutan: token -> dasar -> tata letak -> komponen -> tema -->
+  <link rel="stylesheet" href="tokens.css">
+  <link rel="stylesheet" href="base.css">
+  <link rel="stylesheet" href="layout.css">
+  <link rel="stylesheet" href="komponen.css">
+  <link rel="stylesheet" href="tema.css">
+</head>
+<body>
+  <header>
+    <div class="header-baris">
+      <input type="checkbox" id="tema" class="pengalih-tema">
+      <h1>Catatan Film Saya</h1>
+      <nav aria-label="Navigasi utama">
+        <ul>
+          <li><a href="#daftar-film">Daftar Film</a></li>
+          <li><a href="#tambah-film">Tambah Film</a></li>
+          <li><a href="#tentang-saya">Tentang Saya</a></li>
+        </ul>
+      </nav>
+      <label for="tema" class="tombol-tema">Tema gelap</label>
+    </div>
+  </header>
+
+  <main>
+    <section id="daftar-film">
+      <h2>Daftar Film</h2>
+      <div class="katalog">
+        <div class="kartu kartu-lebar">
+          <div class="tabel-gulir" role="region" aria-label="Tabel daftar film" tabindex="0">
+            <table>
+              <caption>Daftar film yang pernah saya tonton</caption>
+              <thead>
+                <tr>
+                  <th scope="col">Judul</th>
+                  <th scope="col">Tahun</th>
+                  <th scope="col">Sutradara</th>
+                  <th scope="col">Rating Saya</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row">Dilan 1990</th>
+                  <td>2018</td>
+                  <td>Fajar Bustomi dan Pidi Baiq</td>
+                  <td>9</td>
+                </tr>
+                <tr>
+                  <th scope="row">Dilan 1991</th>
+                  <td>2019</td>
+                  <td>Fajar Bustomi dan Pidi Baiq</td>
+                  <td>8</td>
+                </tr>
+                <tr>
+                  <th scope="row">Tunggu Aku Sukses Nanti</th>
+                  <td>2026</td>
+                  <td>Naya Anindita</td>
+                  <td>9</td>
+                </tr>
+                <tr>
+                  <th scope="row">Mencuri Randen Saleh</th>
+                  <td>2022</td>
+                  <td>Angga Dwimas Sasongko</td>
+                  <td>9</td>
+                </tr>
+                <tr>
+                  <th scope="row">Ngeri Ngeri Sedap</th>
+                  <td>2022</td>
+                  <td>Bene Dion Rajagukguk</td>
+                  <td>9</td>
+                </tr>
+                <tr>
+                  <th scope="row">Bila Esok Ibu Tiada</th>
+                  <td>2024</td>
+                  <td>Rudi Soedjarwo</td>
+                  <td>10</td>
+                </tr>
+                <tr>
+                  <th scope="row">Bebas</th>
+                  <td>2019</td>
+                  <td>Riri Riza</td>
+                  <td>9</td>
+                </tr>
+                <tr>
+                  <th scope="row">Esok Tanpa Ibu</th>
+                  <td>2026</td>
+                  <td>Ho Wi Ding</td>
+                  <td>10</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        <div class="kartu">
+          <figure>
+            <img src="film-1.jpg.jpg"
+                 alt="Poster film Dilan 1990: seorang siswi berseragam dan seorang siswa di atas sepeda motor saling berhadapan di jalan tanah di bawah pohon besar, diterangi cahaya matahari senja"
+                 width="300" height="450" loading="lazy">
+            <figcaption>Poster film Dilan 1990</figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <section id="tambah-film">
+      <h2>Tambah Film</h2>
+
+      <form class="kartu form-tambah">
+        <div class="form-kolom">
+          <label for="judul-film">Judul Film</label>
+          <input type="text" id="judul-film" name="judul-film" required aria-describedby="galat-judul">
+          <p class="pesan-galat" id="galat-judul">Judul film wajib diisi.</p>
+        </div>
+
+        <div class="form-kolom">
+          <label for="tahun-film">Tahun Rilis</label>
+          <input type="number" id="tahun-film" name="tahun-film" min="1900" max="2026" required aria-describedby="galat-tahun">
+          <p class="pesan-galat" id="galat-tahun">Tahun rilis harus angka antara 1900 dan 2026.</p>
+        </div>
+
+        <div class="form-kolom">
+          <label for="sutradara">Sutradara</label>
+          <input type="text" id="sutradara" name="sutradara" required aria-describedby="galat-sutradara">
+          <p class="pesan-galat" id="galat-sutradara">Nama sutradara wajib diisi.</p>
+        </div>
+
+        <div class="form-kolom">
+          <label for="rating">Rating Saya</label>
+          <input type="number" id="rating" name="rating" min="1" max="10" required aria-describedby="galat-rating">
+          <p class="pesan-galat" id="galat-rating">Rating harus angka antara 1 dan 10.</p>
+        </div>
+
+        <button type="submit">Tambah Film</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p id="tentang-saya">Magfina Chintia Andris · 25523271 · 2026</p>
+  </footer>
+</body>
+</html>

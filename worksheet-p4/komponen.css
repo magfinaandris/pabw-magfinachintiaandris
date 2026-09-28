@@ -1,0 +1,96 @@
+/* Tabel */
+.tabel-gulir { overflow-x: auto; }
+
+table {
+  width: 100%;
+  min-width: 30rem;
+  border-collapse: collapse;
+}
+
+caption {
+  text-align: left;
+  font-size: var(--text-sm);
+  padding-bottom: var(--space-2);
+}
+
+th, td {
+  text-align: left;
+  padding: var(--space-2) var(--space-3);
+  border-bottom: 1px solid var(--color-border);
+}
+
+thead th { border-bottom-width: 2px; }
+tbody th { font-weight: 600; }
+tbody tr:last-child > * { border-bottom: none; }
+
+figcaption { font-size: var(--text-sm); }
+
+/* Form */
+.form-kolom {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
+}
+
+label {
+  font-size: var(--text-sm);
+  font-weight: 600;
+}
+
+input, select, textarea {
+  font: inherit;
+  padding: var(--space-2) var(--space-3);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  background: var(--color-surface);
+  color: var(--color-fg);
+}
+
+button {
+  font: inherit;
+  align-self: flex-start;
+  padding: var(--space-2) var(--space-4);
+  border: 1px solid transparent;
+  border-radius: var(--radius-md);
+  background: var(--color-primary);
+  color: var(--color-on-primary);
+  cursor: pointer;
+}
+
+button:hover {
+  box-shadow: var(--shadow-card);
+  text-decoration: underline;
+}
+
+/* Keadaan fokus: selalu terlihat */
+:focus-visible {
+  outline: 2px solid var(--color-focus);
+  outline-offset: 2px;
+}
+
+/* Keadaan tidak sah: hanya setelah pengguna mengisi */
+input:user-invalid {
+  border-color: var(--color-danger);
+  border-width: 2px;
+}
+
+.pesan-galat {
+  display: none;
+  color: var(--color-danger);
+  font-size: var(--text-sm);
+}
+
+.pesan-galat::before { content: "\26A0\00A0"; }
+
+.form-kolom:has(input:user-invalid) .pesan-galat { display: block; }
+
+/* Label pengalih tema */
+.tombol-tema {
+  font-size: var(--text-sm);
+  padding: var(--space-1) var(--space-3);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-full);
+  background: var(--color-surface);
+  color: var(--color-fg);
+  cursor: pointer;
+}

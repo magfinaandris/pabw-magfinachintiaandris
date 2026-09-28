@@ -1,0 +1,43 @@
+/* Tema gelap otomatis: hanya lapis semantik yang diganti */
+@media (prefers-color-scheme: dark) {
+  :root {
+    color-scheme: dark;
+    --color-bg:         var(--ink-900);
+    --color-fg:         var(--mist-100);
+    --color-surface:    var(--ink-800);
+    --color-border:     var(--grey-600);
+    --color-primary:    var(--pink-300);
+    --color-on-primary: var(--ink-900);
+    --color-danger:     var(--red-300);
+    --color-focus:      var(--amber-400);
+    --shadow-card:      var(--shadow-1-gelap);
+  }
+}
+
+/* Pengalih manual: HARUS setelah blok media query agar menang */
+.pengalih-tema { position: absolute; opacity: 0; pointer-events: none; }
+
+:root:has(#tema:checked) {
+  color-scheme: dark;
+  --color-bg:         var(--ink-900);
+  --color-fg:         var(--mist-100);
+  --color-surface:    var(--ink-800);
+  --color-border:     var(--grey-600);
+  --color-primary:    var(--pink-300);
+  --color-on-primary: var(--ink-900);
+  --color-danger:     var(--red-300);
+  --color-focus:      var(--amber-400);
+  --shadow-card:      var(--shadow-1-gelap);
+}
+
+/* Kotak centang tersembunyi: tampilkan fokus dan status pada labelnya */
+.header-baris:has(.pengalih-tema:focus-visible) .tombol-tema {
+  outline: 2px solid var(--color-focus);
+  outline-offset: 2px;
+}
+
+.header-baris:has(.pengalih-tema:checked) .tombol-tema {
+  background: var(--color-primary);
+  color: var(--color-on-primary);
+  border-color: var(--color-primary);
+}
