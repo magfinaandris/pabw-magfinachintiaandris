@@ -8,9 +8,9 @@ Topik halaman saya: daftar film yang pernah saya tonton.
 - Dua bagian utama: Daftar Film, Tambah Film
 - Kolom tabel: judul, tahun, sutradara, rating saya
 - Kolom form: judul film, tahun rilis, rating
+- Gambar :  poster film Dilan 1990
 
 
-## Catatan penggunaan AI
 ## Catatan penggunaan AI
 
 Saya menggunakan AI untuk:
