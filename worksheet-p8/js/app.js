@@ -54,6 +54,10 @@ console.table(daftarFilm);
 // filter: menyaring, hasilnya array baru
 const filmFavorit = daftarFilm.filter((film) => film.rating === 10);
 console.table(filmFavorit);
+   // let dipakai karena nilainya berubah
+   pilihanAktif = "favorit";
+   const tampil = pilihanAktif === "favorit" ? filmFavorit : daftarFilm;
+   console.log(`Pilihan aktif: ${pilihanAktif}, jumlah film: ${tampil.length}`);
 
 // find: mengambil satu isi pertama yang cocok
 const filmBebas = daftarFilm.find((film) => film.judul === "Bebas");
