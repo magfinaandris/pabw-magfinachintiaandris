@@ -45,3 +45,8 @@ mengubah warna tombol, tautan, judul, dan garis fokus.
 ### Catatan penggunaan AI (Pertemuan 4)
 
 Saya menggunakan AI untuk: membatu memahami apa isi dari wsnya
+
+## Pertemuan 8 — JavaScript Modern ES6+
+### Catatan penggunaan AI (Pertemuan 8)
+
+Saya menggunakan AI untuk: membantu menjelaskan apa yang saya kurang mengerti dan mengecek bila ada kesalahan
