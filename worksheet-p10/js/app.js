@@ -1,4 +1,4 @@
-
+import { fetchNews } from './api.js';
 const profil = {
   nama: "Magfina Chintia Andris",
   peran: "Mahasiswi Informatika yang suka menonton film",
@@ -95,3 +95,13 @@ if (elemenJudul !== null) {
 const nilaiInput = "8";
 console.log(nilaiInput + 1);
 console.log(Number(nilaiInput) + 1);
+
+async function muatBerita() {
+  try {
+    const list = await fetchNews();
+    console.log(list);
+  } catch (error) {
+    console.log('Gagal memuat berita: ' + error.message);
+  }
+}
+muatBerita();
