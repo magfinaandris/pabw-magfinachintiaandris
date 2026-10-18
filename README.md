@@ -50,3 +50,9 @@ Saya menggunakan AI untuk: membatu memahami apa isi dari wsnya
 ### Catatan penggunaan AI (Pertemuan 8)
 
 Saya menggunakan AI untuk: membantu menjelaskan apa yang saya kurang mengerti dan mengecek bila ada kesalahan
+
+## Pertemuan 9 — DOM dan Event
+
+### Catatan penggunaan AI (Pertemuan 9)
+
+Saya menggunakan AI sebagai pendamping belajar dan menjelaskan konsepnya (querySelector, createElement, event delegation, preventDefault).
