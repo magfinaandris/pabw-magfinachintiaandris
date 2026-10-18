@@ -1,4 +1,3 @@
-/* LAPIS 1 — primitif: nilai mentah, tidak menyebut peran apa pun */
 :root {
   --ink-900:     #14121A;
   --ink-800:     #211D2B;
@@ -35,7 +34,7 @@
   --font-display: Georgia, "Times New Roman", serif;
 }
 
-/* LAPIS 2 — semantik: peran. Isinya mengacu ke lapis 1 (tema terang). */
+
 :root {
   --color-bg:         var(--grey-100);
   --color-fg:         var(--ink-900);
